@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sudoky By Abhinav Vashishth</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="header">
+    <h1>Sudoku Game</h1>
+    <button id="validate">Show Board</button>
+    <div id="gamelevel">
+        <label><input id="level1" type="checkbox" name="check" value="Easyyyy" onclick="changeDifficulty(1)"/>Easy</label>
+        <label><input id="level2" type="checkbox" name="check" value="Medium" onclick="changeDifficulty(2)"/>Medium</label>
+        <label><input id="level3" type="checkbox" name="check" value="Hard" onclick="changeDifficulty(3)"/>Hard</label>
+    </div>
+    </div>
+    <div id="game">
+        <div id="board">
+            <div id="game-containers" class="hide">
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <button id="clear">Clear Board</button>
+        <button id="submit" onclick="validate()"><h3>Validate</h3></button>
+        <button id="answer">Answer</button>
+    </div>
+
+</body>
+</html>
